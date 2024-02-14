@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(201, 231, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 45%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 28px;
+    margin-inline: 20px;
+}
+
+.form-box header h1{
+   text-align: center;
+   margin-bottom: 20px;
+   background-color: khaki;
+   font-size: 30px;
+}
+
+input{
+    width: 100%;
+    padding: 18px 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 12px 0;
+    background-color: rgb(238, 235, 235);
+}
+
+a{
+   text-align: center; 
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+input[type="button"]{
+   margin-block: 20px;
+   background-color: blue;
+   color: white;
+   font-size: 22px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: .4s;
+}
+
+input[type="text"]{
+   display: none;
+}
+
+input[type="button"]:hover{
+    background-color: #1c4381;
+}
+
+.links{
+ display: flex;
+ justify-content: center;
+}
+
+.links a img{
+    max-height: 30px;
+    margin-inline: 10px;
+}
+
+.signup{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup a{
+    font-size: 16px;
+    font-weight: 700;
+    color:  rgb(95, 2, 103);
+}
+
+.signup a:hover{
+    background: aliceblue;
+}
+/* css to achieve responsiveness */
+@media screen and (max-width:700px){
+    .form-box{
+        width: 100%;
+    }
+}
